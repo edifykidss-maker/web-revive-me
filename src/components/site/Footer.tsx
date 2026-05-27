@@ -51,9 +51,11 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-center text-xs text-white/50 md:flex-row md:justify-between">
-          <p>© {new Date().getFullYear()} Haritha Makeovers. All Rights Reserved.</p>
-          <p className="font-script text-base text-gradient-gold">Crafted with love</p>
+        <div className="mt-12 flex flex-col gap-3 border-t border-white/10 pt-6 text-center text-xs text-white/50 md:flex-row md:justify-center">
+          <p>
+            ©2026, Haritha Makeovers | Designed and Developed by{" "}
+            <a href="https://spark9ai.com/" target="_blank" rel="noreferrer" className="text-primary hover:underline">spark9ai</a>
+          </p>
         </div>
       </div>
     </footer>
