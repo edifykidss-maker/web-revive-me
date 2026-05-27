@@ -36,7 +36,7 @@ export function Navbar() {
         <a href="#home" className="flex items-center gap-2 group">
           <Sparkles className="h-5 w-5 text-primary transition group-hover:rotate-12" />
           <span className="font-serif text-xl tracking-wide">
-            Haritha <span className="text-gradient-gold">Makeovers</span>
+            Haritha <span className="text-gradient-pink font-semibold">Makeovers</span>
           </span>
         </a>
 
