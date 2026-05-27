@@ -21,6 +21,13 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/30" />
       </div>
 
+      {/* Sliding animated background layer */}
+      <div className="absolute inset-0 animate-slide-bg mix-blend-soft-light pointer-events-none" />
+      <div
+        className="absolute -inset-x-1/4 -inset-y-1/4 animate-slide-diagonal pointer-events-none opacity-40"
+        style={{ background: "var(--gradient-blush)" }}
+      />
+
       {/* Floating glow orbs */}
       <motion.div
         animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
