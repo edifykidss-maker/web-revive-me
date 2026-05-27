@@ -218,4 +218,27 @@
     background-size: 200% 200%;
     animation: gradient-shift 12s ease infinite;
   }
+
+  @keyframes slide-bg {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  .animate-slide-bg {
+    background: linear-gradient(120deg,
+      oklch(0.93 0.05 20 / 0.55) 0%,
+      oklch(0.88 0.08 50 / 0.45) 25%,
+      oklch(0.55 0.22 0 / 0.25) 50%,
+      oklch(0.88 0.08 50 / 0.45) 75%,
+      oklch(0.93 0.05 20 / 0.55) 100%);
+    background-size: 200% 200%;
+    animation: slide-bg 18s linear infinite;
+  }
+
+  @keyframes slide-diagonal {
+    0% { transform: translateX(-30%) translateY(-10%); }
+    100% { transform: translateX(30%) translateY(10%); }
+  }
+  .animate-slide-diagonal {
+    animation: slide-diagonal 20s ease-in-out infinite alternate;
+  }
 }
