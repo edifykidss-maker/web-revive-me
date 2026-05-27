@@ -199,14 +199,14 @@
     100% { background-position: 200% center; }
   }
   .animate-shimmer {
-    background: linear-gradient(90deg, transparent, oklch(0.92 0.09 85 / 0.6), transparent);
+    background: linear-gradient(90deg, transparent, #db5d6899, transparent);
     background-size: 200% 100%;
     animation: shimmer 3s linear infinite;
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px oklch(0.82 0.13 80 / 0.4); }
-    50% { box-shadow: 0 0 60px oklch(0.82 0.13 80 / 0.7); }
+    0%, 100% { box-shadow: 0 0 20px #db5d6866; }
+    50% { box-shadow: 0 0 60px #db5d68b3; }
   }
   .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
 
