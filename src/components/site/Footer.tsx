@@ -11,7 +11,7 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-3">
           <div>
             <div className="flex items-center">
-              <img src={logo} alt="Haritha Makeovers" className="h-16 w-auto object-contain bg-white rounded-md p-2" />
+              <img src={logo} alt="Haritha Makeovers" className="h-28 w-auto object-contain bg-white rounded-md p-2" />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white font-bold">
               A premium bridal & party makeup studio crafting cinematic, HD-finish looks

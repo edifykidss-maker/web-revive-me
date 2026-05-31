@@ -35,7 +35,7 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#home" className="flex items-center group">
-          <img src={logo} alt="Haritha Makeovers" className="h-12 w-auto object-contain transition group-hover:scale-105" />
+          <img src={logo} alt="Haritha Makeovers" className="h-20 w-auto object-contain transition group-hover:scale-105" />
         </a>
 
         <ul className="hidden items-center gap-8 lg:flex">
