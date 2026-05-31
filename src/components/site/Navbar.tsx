@@ -34,8 +34,8 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#home" className="flex items-center gap-2 group">
-          <Sparkles className="h-5 w-5 text-primary transition group-hover:rotate-12" />
+        <a href="#home" className="flex items-center gap-3 group">
+          <img src={logo} alt="Haritha Makeovers" className="h-10 w-10 object-contain transition group-hover:scale-105" />
           <span className="font-serif text-xl tracking-wide">
             Haritha <span className="text-gradient-pink font-semibold">Makeovers</span>
           </span>
