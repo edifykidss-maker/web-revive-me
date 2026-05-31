@@ -1,4 +1,5 @@
-import { Instagram, Sparkles } from "lucide-react";
+import { Instagram } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const INSTAGRAM_URL = "https://www.instagram.com/harrittha_makeover14/";
 
@@ -9,11 +10,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 py-14">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <div className="flex items-center gap-2">
-              <Sparkles className="h-5 w-5 text-white" />
-              <span className="font-serif text-xl text-white">
-                Haritha <span className="text-white">Makeovers</span>
-              </span>
+            <div className="flex items-center">
+              <img src={logo} alt="Haritha Makeovers" className="h-16 w-auto object-contain bg-white rounded-md p-2" />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-white font-bold">
               A premium bridal & party makeup studio crafting cinematic, HD-finish looks
