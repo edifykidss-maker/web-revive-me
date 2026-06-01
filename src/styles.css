@@ -55,7 +55,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.18 0.015 30);
 
-  --primary: #db5d68;                           /* dark pink accent */
+  --primary: #af7f3d;                           /* dark pink accent */
   --primary-foreground: oklch(0.985 0.005 60);
   --secondary: oklch(0.93 0.03 25);             /* blush */
   --secondary-foreground: oklch(0.25 0.02 30);
@@ -68,17 +68,17 @@
 
   --border: oklch(0.88 0.02 50);
   --input: oklch(0.92 0.015 50);
-  --ring: #db5d68;
+  --ring: #af7f3d;
 
   --blush: oklch(0.9 0.045 20);
   --nude: oklch(0.86 0.05 50);
-  --gold: #db5d68;
-  --gold-soft: #e8959e;
+  --gold: #af7f3d;
+  --gold-soft: #c9a06a;
   --ink: oklch(0.12 0.012 30);
 
-  --gradient-luxury: linear-gradient(135deg, oklch(0.95 0.03 25) 0%, oklch(0.88 0.06 50) 50%, #db5d68 100%);
-  --gradient-gold: linear-gradient(135deg, #db5d68 0%, #e8959e 50%, #c44a5a 100%);
-  --gradient-pink: linear-gradient(135deg, #db5d68 0%, #e8959e 50%, #c44a5a 100%);
+  --gradient-luxury: linear-gradient(135deg, oklch(0.95 0.03 25) 0%, oklch(0.88 0.06 50) 50%, #af7f3d 100%);
+  --gradient-gold: linear-gradient(135deg, #af7f3d 0%, #c9a06a 50%, #8a5f2a 100%);
+  --gradient-pink: linear-gradient(135deg, #af7f3d 0%, #c9a06a 50%, #8a5f2a 100%);
   --gradient-blush: radial-gradient(ellipse at top, oklch(0.93 0.05 20 / 0.6), transparent 60%);
   --gradient-dark: linear-gradient(135deg, oklch(0.15 0.01 30) 0%, oklch(0.22 0.02 40) 100%);
 
@@ -88,12 +88,12 @@
 
   --sidebar: oklch(0.98 0.01 50);
   --sidebar-foreground: oklch(0.18 0.015 30);
-  --sidebar-primary: #db5d68;
+  --sidebar-primary: #af7f3d;
   --sidebar-primary-foreground: oklch(0.98 0.01 50);
   --sidebar-accent: oklch(0.93 0.03 25);
   --sidebar-accent-foreground: oklch(0.18 0.015 30);
   --sidebar-border: oklch(0.88 0.02 50);
-  --sidebar-ring: #db5d68;
+  --sidebar-ring: #af7f3d;
 }
 
 .dark {
@@ -103,7 +103,7 @@
   --card-foreground: oklch(0.96 0.01 50);
   --popover: oklch(0.16 0.015 30);
   --popover-foreground: oklch(0.96 0.01 50);
-  --primary: #db5d68;
+  --primary: #af7f3d;
   --primary-foreground: oklch(0.12 0.012 30);
   --secondary: oklch(0.22 0.02 30);
   --secondary-foreground: oklch(0.96 0.01 50);
@@ -113,7 +113,7 @@
   --accent-foreground: oklch(0.96 0.01 50);
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
-  --ring: #db5d68;
+  --ring: #af7f3d;
 }
 
 @layer base {
@@ -199,14 +199,14 @@
     100% { background-position: 200% center; }
   }
   .animate-shimmer {
-    background: linear-gradient(90deg, transparent, #db5d6899, transparent);
+    background: linear-gradient(90deg, transparent, #af7f3d99, transparent);
     background-size: 200% 100%;
     animation: shimmer 3s linear infinite;
   }
 
   @keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px #db5d6866; }
-    50% { box-shadow: 0 0 60px #db5d68b3; }
+    0%, 100% { box-shadow: 0 0 20px #af7f3d66; }
+    50% { box-shadow: 0 0 60px #af7f3db3; }
   }
   .animate-pulse-glow { animation: pulse-glow 3s ease-in-out infinite; }
 
