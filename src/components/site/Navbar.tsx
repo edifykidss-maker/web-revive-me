@@ -29,7 +29,7 @@ export function Navbar() {
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-500 ${
+      className={`absolute inset-x-0 top-0 z-50 ${
         scrolled ? "glass shadow-soft" : "bg-transparent"
       }`}
     >
