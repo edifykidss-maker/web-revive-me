@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
-import heroBride from "@/assets/hero-bride.jpg";
+import { ArrowRight, Sparkles, Heart, Crown, Star, Gem } from "lucide-react";
+import heroBride from "@/assets/hero-bg.jpg";
 import { ParticlesBg } from "./ParticlesBg";
 
 export function Hero() {
@@ -104,11 +104,13 @@ export function Hero() {
             className="mt-12 flex items-center gap-6 text-sm text-muted-foreground"
           >
             <div className="flex -space-x-2">
-              {[...Array(4)].map((_, i) => (
+              {[Crown, Heart, Gem, Star].map((Icon, i) => (
                 <div
                   key={i}
-                  className="h-9 w-9 rounded-full border-2 border-background bg-gradient-luxury"
-                />
+                  className="h-9 w-9 rounded-full border-2 border-background bg-gradient-gold inline-flex items-center justify-center shadow-soft"
+                >
+                  <Icon className="h-4 w-4 text-ink" />
+                </div>
               ))}
             </div>
             <span><b className="text-foreground">500+</b> happy brides & counting</span>
