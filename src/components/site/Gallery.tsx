@@ -16,6 +16,8 @@ import g12 from "@/assets/gallery-story-12.jpg.asset.json";
 import g13 from "@/assets/gallery-story-13.jpg.asset.json";
 import g14 from "@/assets/gallery-story-14.jpg.asset.json";
 import g15 from "@/assets/gallery-story-15.jpg.asset.json";
+import g16 from "@/assets/gallery-story-16.jpg.asset.json";
+import g17 from "@/assets/gallery-story-17.jpg.asset.json";
 
 const items = [
   { src: g1.url, alt: "Bridal makeup gallery photo 1" },
