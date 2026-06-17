@@ -6,6 +6,16 @@ import g2 from "@/assets/gallery-story-2.jpg.asset.json";
 import g3 from "@/assets/gallery-story-3.jpg.asset.json";
 import g4 from "@/assets/gallery-story-4.jpg.asset.json";
 import g5 from "@/assets/gallery-story-5.jpg.asset.json";
+import g6 from "@/assets/gallery-story-6.jpg.asset.json";
+import g7 from "@/assets/gallery-story-7.jpg.asset.json";
+import g8 from "@/assets/gallery-story-8.jpg.asset.json";
+import g9 from "@/assets/gallery-story-9.jpg.asset.json";
+import g10 from "@/assets/gallery-story-10.jpg.asset.json";
+import g11 from "@/assets/gallery-story-11.jpg.asset.json";
+import g12 from "@/assets/gallery-story-12.jpg.asset.json";
+import g13 from "@/assets/gallery-story-13.jpg.asset.json";
+import g14 from "@/assets/gallery-story-14.jpg.asset.json";
+import g15 from "@/assets/gallery-story-15.jpg.asset.json";
 
 const items = [
   { src: g1.url, alt: "Bridal makeup gallery photo 1" },
@@ -13,6 +23,16 @@ const items = [
   { src: g3.url, alt: "Bridal makeup gallery close-up" },
   { src: g4.url, alt: "Makeup gallery family look" },
   { src: g5.url, alt: "Makeup gallery mother and child look" },
+  { src: g6.url, alt: "Traditional festive look" },
+  { src: g7.url, alt: "Bridal ceremony portrait" },
+  { src: g8.url, alt: "Family festive portrait" },
+  { src: g9.url, alt: "Bridal close-up portrait" },
+  { src: g10.url, alt: "Editorial hairstyle back view" },
+  { src: g11.url, alt: "Young festive look" },
+  { src: g12.url, alt: "Newspaper print saree look" },
+  { src: g13.url, alt: "Smiling editorial portrait" },
+  { src: g14.url, alt: "Bride with family portrait" },
+  { src: g15.url, alt: "Traditional saree portrait" },
 ];
 
 export function Gallery() {
