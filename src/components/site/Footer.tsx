@@ -49,7 +49,7 @@ export function Footer() {
                 aria-label="Instagram"
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white text-white transition hover:bg-white hover:text-ink"
               >
-                <Instagram className="h-4 w-4" />
+                <InstagramIcon className="h-4 w-4" />
               </a>
             </div>
             <p className="mt-6 text-sm text-white font-bold">+91 86398 09567</p>
