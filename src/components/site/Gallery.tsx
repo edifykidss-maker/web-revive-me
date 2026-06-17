@@ -1,20 +1,18 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { X } from "lucide-react";
-import g1 from "@/assets/gallery-1.jpg";
-import g2 from "@/assets/gallery-2.jpg";
-import g3 from "@/assets/gallery-3.jpg";
-import g4 from "@/assets/gallery-4.jpg";
-import g5 from "@/assets/gallery-5.jpg";
-import g6 from "@/assets/gallery-6.jpg";
+import g1 from "@/assets/gallery-story-1.jpg.asset.json";
+import g2 from "@/assets/gallery-story-2.jpg.asset.json";
+import g3 from "@/assets/gallery-story-3.jpg.asset.json";
+import g4 from "@/assets/gallery-story-4.jpg.asset.json";
+import g5 from "@/assets/gallery-story-5.jpg.asset.json";
 
 const items = [
-  { src: g1, span: "row-span-2", label: "Traditional Bridal" },
-  { src: g2, span: "", label: "Party Glam" },
-  { src: g3, span: "", label: "Engagement Glow" },
-  { src: g4, span: "row-span-2", label: "Reception Elegance" },
-  { src: g5, span: "", label: "Pre-Wedding" },
-  { src: g6, span: "", label: "HD Bridal Finish" },
+  { src: g1.url, alt: "Bridal makeup gallery photo 1" },
+  { src: g2.url, alt: "Bridal makeup gallery photo 2" },
+  { src: g3.url, alt: "Bridal makeup gallery close-up" },
+  { src: g4.url, alt: "Makeup gallery family look" },
+  { src: g5.url, alt: "Makeup gallery mother and child look" },
 ];
 
 export function Gallery() {
@@ -29,7 +27,7 @@ export function Gallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-center max-w-2xl mx-auto"
+          className="mx-auto max-w-2xl text-center"
         >
           <p className="text-xs uppercase tracking-[0.3em] text-primary">The Portfolio</p>
           <h2 className="mt-4 font-serif text-4xl sm:text-5xl">
@@ -40,28 +38,25 @@ export function Gallery() {
           </p>
         </motion.div>
 
-        <div className="mt-14 grid auto-rows-[180px] grid-cols-2 gap-4 sm:auto-rows-[220px] md:grid-cols-3 lg:auto-rows-[260px]">
+        <div className="mt-14 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((it, i) => (
             <motion.button
               key={i}
-              initial={{ opacity: 0, scale: 0.9 }}
+              initial={{ opacity: 0, scale: 0.96 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ delay: i * 0.08, duration: 0.6 }}
+              transition={{ delay: i * 0.08, duration: 0.5 }}
               onClick={() => setActive(i)}
-              className={`group relative overflow-hidden rounded-2xl shadow-soft ${it.span}`}
+              className="group relative aspect-[4/5] overflow-hidden rounded-2xl shadow-soft"
             >
               <img
                 src={it.src}
-                alt={it.label}
+                alt={it.alt}
                 loading="lazy"
-                className="h-full w-full object-cover transition duration-700 group-hover:scale-110"
+                width={1080}
+                height={1350}
+                className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent" />
-              <div className="absolute bottom-0 left-0 p-4 text-left text-white">
-                <p className="font-serif text-lg">{it.label}</p>
-                <p className="text-xs uppercase tracking-[0.25em] text-primary">Haritha Makeovers</p>
-              </div>
             </motion.button>
           ))}
         </div>
@@ -74,7 +69,7 @@ export function Gallery() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             onClick={() => setActive(null)}
-            className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/90 backdrop-blur-md p-4"
+            className="fixed inset-0 z-[100] flex items-center justify-center bg-ink/90 p-4 backdrop-blur-md"
           >
             <button
               onClick={() => setActive(null)}
@@ -88,7 +83,7 @@ export function Gallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               src={items[active].src}
-              alt={items[active].label}
+              alt={items[active].alt}
               className="max-h-[88vh] max-w-[92vw] rounded-2xl object-contain shadow-luxury"
               onClick={(e) => e.stopPropagation()}
             />
