@@ -16,6 +16,8 @@ import g12 from "@/assets/gallery-story-12.jpg.asset.json";
 import g13 from "@/assets/gallery-story-13.jpg.asset.json";
 import g14 from "@/assets/gallery-story-14.jpg.asset.json";
 import g15 from "@/assets/gallery-story-15.jpg.asset.json";
+import g16 from "@/assets/gallery-story-16.jpg.asset.json";
+import g17 from "@/assets/gallery-story-17.jpg.asset.json";
 
 const items = [
   { src: g1.url, alt: "Bridal makeup gallery photo 1" },
@@ -33,6 +35,8 @@ const items = [
   { src: g13.url, alt: "Smiling editorial portrait" },
   { src: g14.url, alt: "Bride with family portrait" },
   { src: g15.url, alt: "Traditional saree portrait" },
+  { src: g16.url, alt: "Bridal blessing ceremony moment" },
+  { src: g17.url, alt: "Bridal portrait in red saree" },
 ];
 
 export function Gallery() {
