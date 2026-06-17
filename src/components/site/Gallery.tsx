@@ -35,6 +35,8 @@ const items = [
   { src: g13.url, alt: "Smiling editorial portrait" },
   { src: g14.url, alt: "Bride with family portrait" },
   { src: g15.url, alt: "Traditional saree portrait" },
+  { src: g16.url, alt: "Bridal blessing ceremony moment" },
+  { src: g17.url, alt: "Bridal portrait in red saree" },
 ];
 
 export function Gallery() {
